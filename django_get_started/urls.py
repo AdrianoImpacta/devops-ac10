@@ -23,6 +23,8 @@ urlpatterns = patterns('',
         'django.contrib.auth.views.login',
     url(r'^cadastro_vestibulares', 'app.views.cadastro_vestibulares’,
     name='cadastro_vestibulares'),
+    url(r'^inscricao_candidatos', 'app.views.inscricao_candidatos',
+    name= 'inscricao_candidatos'),
         {
             'template_name': 'app/login.html',
             'authentication_form': BootstrapAuthenticationForm,
